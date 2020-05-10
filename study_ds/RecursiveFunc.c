@@ -4,7 +4,7 @@ void Recursive(int num)
 {
     if (num <= 0 )  //재귀의 탈출 조건
         return;
-    printf("Recursive call! %d \n", num);
+    printf("Recursive call! %lu \n", num);
     Recursive(num-1);
     
 }

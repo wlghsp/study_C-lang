@@ -2,7 +2,7 @@
 
 int Fibo(int n)
 {
-   printf("func call param %d \n", n);
+   printf("func call param %lu \n", n);
 
    if(n==1)
     return 0;

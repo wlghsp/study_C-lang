@@ -10,11 +10,11 @@ int Factorial(int n)
 
 int main(void)
 {
-    printf("1! = %d \n", Factorial(1));
-    printf("2! = %d \n", Factorial(2));
-    printf("3! = %d \n", Factorial(3));
-    printf("4! = %d \n", Factorial(4));
-    printf("9! = %d \n", Factorial(9));
+    printf("1! = %lu \n", Factorial(1));
+    printf("2! = %lu \n", Factorial(2));
+    printf("3! = %lu \n", Factorial(3));
+    printf("4! = %lu \n", Factorial(4));
+    printf("9! = %lu \n", Factorial(9));
     return 0;
 
 }

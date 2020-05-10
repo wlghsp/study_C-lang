@@ -15,7 +15,7 @@ int main(void)
 {
     int i;
     for ( i = 1; i < 15; i++)
-        printf("%d ", Fibo(i));
+        printf("%lu ", Fibo(i));
 
     return 0;
     

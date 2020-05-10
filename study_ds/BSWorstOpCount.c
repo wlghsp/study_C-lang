@@ -25,7 +25,7 @@ int BSearch(int ar[], int len, int target)
         }
         opCount += 1; //비교연산의 횟수 1 증가
     } 
-    printf("비교연산횟수: %d \n", opCount); //탐색실패 시 연산횟수 출력
+    printf("비교연산횟수: %lu \n", opCount); //탐색실패 시 연산횟수 출력
     return -1;
     
 }
@@ -42,21 +42,21 @@ int main(void)
     if(idx == -1)
         printf("탐색 실패 \n\n");
     else
-        printf("타겟 저장 인데스: %d \n", idx);
+        printf("타겟 저장 인데스: %lu \n", idx);
     
     //배열 arr2를 대상으로, 저장되지 않은 정수 2을 찾으라고 명령
     idx = BSearch(arr2, sizeof(arr2)/sizeof(int), 2);
     if(idx == -1)
         printf("탐색 실패 \n\n");
     else
-        printf("타겟 저장 인데스: %d \n", idx);
+        printf("타겟 저장 인데스: %lu \n", idx);
     
      //배열 arr3를 대상으로, 저장되지 않은 정수 3을 찾으라고 명령
     idx = BSearch(arr3, sizeof(arr3)/sizeof(int), 3);
     if(idx == -1)
         printf("탐색 실패 \n\n");
     else
-        printf("타겟 저장 인데스: %d \n", idx);
+        printf("타겟 저장 인데스: %lu \n", idx);
     
     return 0;
 }

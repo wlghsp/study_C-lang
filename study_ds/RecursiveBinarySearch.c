@@ -24,13 +24,13 @@ int main(void)
     if (idx == -1)
         printf("탐색 실패 \n");
     else
-        printf("타겟 저장 인덱스: %d \n", idx);
+        printf("타겟 저장 인덱스: %lu \n", idx);
     
     idx = BSearchRecur(arr, 0, sizeof(arr)/sizeof(int)-1, 4);
     if (idx == -1)
         printf("탐색 실패 \n");
     else
-        printf("타겟 저장 인덱스: %d \n", idx);
+        printf("타겟 저장 인덱스: %lu \n", idx);
 
     return 0; 
 }
