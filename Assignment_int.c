@@ -33,7 +33,7 @@ int main()
         scanf("%s",list[i].name);
         printf("학과 : ");
         scanf("%s",list[i].dept);
-        printf("주민등록번호 : ");          //7자리만 입력받음 
+        printf("주민등록번호(앞 7자리만) : ");          //7자리만 입력받음 
         scanf("%d%*c", &list[i].regNum);
         
 
@@ -102,7 +102,6 @@ int main()
      for ( i = 0; i < 3; i++) //출생연도가 이를수록 위에 위치함.
      {
         printf("%s, %d년 %d월 %d일, %s, %s, %s, %s \n", list[i].name, list[i].year, list[i].month, list[i].day, list[i].leapYear == 0 ? "윤년":"윤년아님",list[i].nationality == 0 ? "대한민국":"외국",list[i].gender == 0 ? "남자":"여자" , list[i].dept); 
-
      }
      printf("\n");
      printf("-------------------------------- \n");
