@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int num1 = 100, nu우m2 = 100;
+    int num1 = 100, num2 = 100;
     int * pnum;
 
     pnum = &num1; //포인터 pnum이 num1을 가리킴
