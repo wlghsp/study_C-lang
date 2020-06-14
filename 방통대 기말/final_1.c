@@ -24,8 +24,9 @@ int main() { //main()함수의 시작
 int odd_sum(int *gr, int size){ // 정수형 포인터 변수, 배열 크기를 매개변수로 받음
     int sum1 = 0;                // 변수 sum1 정수형 선언 및 초기화 
     int i;                       // 변수 i를 정수형으로 선언 
-    for (i = 0; i < size; i+=2)   //for문 0부터 시작 2 씩 증가하여 짝수 번 요소만 더함. 
-        sum1 += gr[i];          //배열 x[0]=1,x[2]=3,x[4]=5,x[6]=7,x[8]=9 합계
+    for (i = 0; i < size; i++)   //i는 0~9까지 반복하는 for문 
+     if(i % 2 != 0)
+        sum1 += gr[i];          //배열 x[1]=2,x[3]=4,x[5]=6,x[7]=8,x[9]=10 합계
 
     return sum1;                //짝수 번 요소의 합 반환 
     
@@ -35,8 +36,9 @@ int odd_sum(int *gr, int size){ // 정수형 포인터 변수, 배열 크기를 
 int even_sum(int *gr, int size){ // 정수형 포인터 변수, 배열 크기를 매개변수로 받음
     int sum2 = 0;               // 변수 sum2 정수형 선언 및 초기화 
     int i;                      // 변수 i를 정수형으로 선언 
-    for (i = 1; i < size; i+=2)  //for문 1부터 시작 2 씩 증가하여 홀수 번 요소만 더함. 
-        sum2 += gr[i];          //배열 x[1]=2,x[3]=4,x[5]=6,x[7]=8,x[9]=10 합계
+    for (i = 0; i < size; i++)  //i는 0~9까지 반복하는 for문 
+        if(i % 2 == 0)
+            sum2 += gr[i];      //배열 x[0]=1,x[2]=3,x[4]=5,x[6]=7,x[8]=9 합계
 
     return sum2;                //홀수 번 요소의 합 반환 
 }
