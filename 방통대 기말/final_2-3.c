@@ -9,7 +9,6 @@ struct entry {          // entry형 구조체 정의
 struct entry list[4];      // 크기 4의 entry형 구조체 배열 list 선언 
 int i;                     // 정수형 변수 i 선언 
 
-
 void main()  //main()함수의 시작 
 {
    for ( i = 0; i < 4; i++)  //3명의 정보를 입력 받을 for문 
@@ -21,7 +20,7 @@ void main()  //main()함수의 시작
        printf("Enter phone number : "); // 전화번호 입력 안내문 출력 
        scanf("%s", list[i].phone);   // 입력된 전화번호를 구조체 배열 i번째 요소의 phone에 저장
        printf("\n");        // 줄 바꿈 
-   }
+   } 
     printf("\n");  // 줄 바꿈 
     for ( i = 0; i < 4; i++) //입력 받은 3명의 정보를 출력할 for문 
     {

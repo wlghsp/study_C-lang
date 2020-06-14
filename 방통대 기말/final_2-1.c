@@ -12,7 +12,9 @@ void main() //main()함수의 시작
     printf("문자열을 입력하시오.(50자 이내) : "); //문자열 입력 안내문 출력 
     scanf("%s", in_s);          //배열 in_s에 입력을 받음. 
     ch = in_s[i];               //in_s[0]을 문자형 ch에 대입 
-    while (ch != '\0'){     // '\0' 은 NULL이며 문자열의 끝을 의미, ch에 입력된 문자가 NULL이 아니면 반복문 while이 계속되고, NULL일 경우 while문 종료  
+
+                            // '\0' 은 NULL이며 문자열의 끝을 의미, ch에 입력된 문자가 NULL이 아니면 반복문 while이 
+    while (ch != '\0'){     // 계속되고, NULL일 경우 while문 종료  
         if(ch >= 'A' && ch <= 'Z')  
             out_s[i] = lower(ch);  //ch가 대문자라면 ch를 넣어 lower함수호출. 소문자가 된 문자를 out_s[i]에 대입
         else if(ch >= 'a' && ch <= 'z')
@@ -36,3 +38,5 @@ char upper(char ch) {   // 대문자 변환 함수 정의
 char lower(char ch) {   
     return ch + 32;  //ASCII 코드값 대소문자 차이 32: 소문자 변환을 위해 32를 더한다.
 }
+
+

@@ -9,9 +9,10 @@ int main() { //main()함수의 시작
 
     for ( i = 0; i < 10; i++)   //배열 x[0]에서 x[9]에 1부터 10까지 대입 
        x[i] = i+1;                
-
-    sum1 = even_sum(x,sizeof(x));      // even_sum함수를 배열x와 배열x사이즈를 매개변수로 호출 
-    sum2 = odd_sum(x,sizeof(x));       // odd_sum함수를 배열x와 배열x사이즈를 매개변수로 호출 
+    /* even_sum함수를 배열x와 배열x사이즈를 매개변수로 호출 */
+    sum1 = even_sum(x,sizeof(x)/sizeof(int));   // 배열 크기를 구할 때는 전체 공간을 요소의 크기로 나눠줌
+    /* odd_sum함수를 배열x와 배열x사이즈를 매개변수로 호출 */
+    sum2 = odd_sum(x,sizeof(x)/sizeof(int));   // 배열 크기를 구할 때는 전체 공간을 요소의 크기로 나눠줌  
     
     printf("배열x의 짝수 번 요소의 합: %d\n", sum1);  // 짝수 번 요소의 합 출력 
     printf("배열x의 홀수 번 요소의 합: %d", sum2);    // 홀수 번 요소의 합 출력 

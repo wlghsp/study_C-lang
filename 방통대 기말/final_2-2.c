@@ -17,9 +17,9 @@ void main() //main()함수의 시작
     avg = sum / n; // 평균 연산 
     printf("The average is %5.2f \n", avg); //평균값 출력 
     
-    for ( count = 0; count < n; ++count) //n개의 데이터 값 및 표준 편차를 출력하는 for문  
+    for ( count = 0; count < n; ++count) //n개의 데이터 값 및 편차를 출력하는 for문  
     {
-        d= list[count] - avg; //표준편차는 각 데이터에서 평균을 제한다. 
-        printf("i = %d x = %5.2f d=%5.2f \n", count + 1, list[count], d); //각 데이터 값 및 표준편차 출력 
+        d= list[count] - avg; //편차는 각 데이터에서 평균을 제한다. 
+        printf("i = %d x = %5.2f d= %5.2f \n", count + 1, list[count], d); //각 데이터 값 및 편차 출력 
     }   
 }
